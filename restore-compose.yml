@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  anyvoice-restore:
+    container_name: restore
+    build: .
+    command: >
+      bash -c "python3 restore.py"
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    networks:
+      - network
+networks:
+  anyvoice-network:
+    name: infra-network

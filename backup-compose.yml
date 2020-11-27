@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  anyvoice-backup:
+    container_name: backup
+    build: .
+    command: >
+      bash -c "python3 backup.py"
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    networks:
+      - network
+networks:
+  anyvoice-network:
+    name: infra-network
