@@ -1,2 +1,2 @@
-## Бэкап и восстановление для PostgreSQL в Яндекс-облако
-#### Два скрипта и инструкции для контейнеризации и запуска по расписанию в кластере k8s.
+## Backup and Restore for PostgreSQL in Yandex Cloud
+#### Two scripts and instructions for containerization and scheduled execution in a k8s cluster.
